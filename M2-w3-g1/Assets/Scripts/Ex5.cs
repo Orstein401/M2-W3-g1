@@ -19,7 +19,7 @@ public class Ex5 : MonoBehaviour
     {
         if (arr.Length == dim)
         {
-            Debug.Log("d");
+            //Debug.Log("d");
             return arr;
            
         }
@@ -39,7 +39,7 @@ public class Ex5 : MonoBehaviour
                     secondArr[i] = arr[i];
                 }
             }
-            Debug.Log("dadadadadadadadad");
+            //Debug.Log("dadadadadadadadad");
             return secondArr;
             
         }
