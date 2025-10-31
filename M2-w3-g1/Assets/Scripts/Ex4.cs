@@ -27,8 +27,10 @@ public class Ex4 : MonoBehaviour
 
     void FindMax2(int[] arr)
     {
-        int maxValue = 0;
-        int secondMax=0;
+        int maxValue = int.MinValue; 
+        ;
+        int secondMax = int.MinValue;
+
         for(int i=0; i< arr.Length; i++)
         {
             if (arr[i] > maxValue)
@@ -55,15 +57,15 @@ public class Ex4 : MonoBehaviour
             //    bool ver = arr[i] != 3;
             //    Debug.Log("è diverso da tre"+ver);
             //    Debug.Log("valore in questo momento" + arr[i]);
-
+            
             //}
         }
         Debug.Log("il valore maggiore è " + maxValue + " il secondo maggiore è " + secondMax);
     }
     void FindMin2(int[] arr)
     {
-        int minValue = 999999999;
-        int secondMin = 999999999;
+        int minValue = int.MaxValue;
+        int secondMin = int.MaxValue;
         for (int i = 0; i < arr.Length; i++)
         {
             if (arr[i] < minValue)

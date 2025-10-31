@@ -16,22 +16,25 @@ public class Ex2 : MonoBehaviour
     }
     bool IsMultiple(int num, int multiple)
     {
-        
-        return (multiple%num==0);
+
+        return (multiple % num == 0);
     }
     void Start()
     {
         IsEven(number);
         IsMultiple(number, multiple);
 
-        if (IsEven(number)) {
+        if (IsEven(number))
+        {
             Debug.Log("il numero " + number + " è pari");
-        }else{
+        }
+        else
+        {
             Debug.Log("il numero " + number + " non è pari");
 
         }
 
-        if(IsMultiple(baseNum, multiple))
+        if (IsMultiple(baseNum, multiple))
         {
             Debug.Log("il numero " + multiple + " è un multiplo di " + baseNum);
         }
@@ -44,6 +47,6 @@ public class Ex2 : MonoBehaviour
         //Debug.Log("il numero "+multiple+" è un multiplo di "+baseNum+"? "+IsMultiple(baseNum,multiple));
     }
 
-    
-    
+
+
 }

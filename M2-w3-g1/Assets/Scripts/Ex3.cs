@@ -10,8 +10,8 @@ public class Ex3 : MonoBehaviour
 
     int[] GenerateArr(int size, int min, int max)
     {
-        int[]arr=new int[size];
-        for(int i=0; i < arr.Length; i++)
+        int[] arr = new int[size];
+        for (int i = 0; i < arr.Length; i++)
         {
             arr[i] = Random.Range(min, max);
         }
@@ -19,7 +19,8 @@ public class Ex3 : MonoBehaviour
     }
     void PrintArr(int[] arr)
     {
-        for (int i = 0; i < arr.Length; i++){
+        for (int i = 0; i < arr.Length; i++)
+        {
             Debug.Log(arr[i]);
         }
     }
@@ -27,7 +28,7 @@ public class Ex3 : MonoBehaviour
     void FindMin(int[] arr)
     {
         int min = 1113456789;
-        for (int i=0; i < arr.Length; i++)
+        for (int i = 0; i < arr.Length; i++)
         {
             if (arr[i] < min)
             {
@@ -50,7 +51,7 @@ public class Ex3 : MonoBehaviour
     }
     void Start()
     {
-        int[]arr= GenerateArr(size,minValue,maxValue);
+        int[] arr = GenerateArr(size, minValue, maxValue);
         PrintArr(arr);
         FindMax(arr);
         FindMin(arr);

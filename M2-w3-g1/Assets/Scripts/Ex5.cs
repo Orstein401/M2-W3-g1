@@ -28,8 +28,9 @@ public class Ex5 : MonoBehaviour
             int[] secondArr = new int[dim];
             for (int i = 0; i < dim; i++)
             {
-
-                if (i >= arr.Length)
+                // se uso > risulta inesistente la casella dall'array, mentre con >= la trova, trovato risposta semplicemente se non è maggiore esegue else e di fatto non trova 
+                // la casella in più su arr che non esiste, mentre su if la casella su secondArr esiste e gli posso mettere un valore
+                if (i >= arr.Length) 
                 {
                     secondArr[i] = 0;
                    
@@ -47,7 +48,7 @@ public class Ex5 : MonoBehaviour
     }
     void Start()
     {
-        Debug.Log("originale");
+      Debug.Log("originale");
       PrintArr(arr);
       arr = ChangeArr(arr, newDim);
       Debug.Log("a piacimento");
